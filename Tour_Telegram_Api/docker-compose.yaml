@@ -1,0 +1,49 @@
+version: "3.7"
+services:
+  #  db:
+  #    container_name: user-postgres
+  #    image: postgres
+  #    environment:
+  #      POSTGRES_USER: root
+  #      POSTGRES_PASSWORD: root
+  #      POSTGRES_DB: tour
+  #    ports:
+  #      - "5433:5433"
+
+  postgres:
+    image: postgres:14-alpine
+    ports:
+      - "5432:5432"
+    volumes:
+      - ~/apps/postgres:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_PASSWORD=12345
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=tour
+
+  localRabbitMQ:
+    image: rabbitmq:3.13
+
+    environment:
+      RABBITMQ_DEFAULT_USER: admin
+      RABBITMQ_DEFAULT_PASS: admin
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+
+  springapi:
+    container_name: springApi
+    build: .
+    ports:
+      - "8080:8080"
+    #    environment:
+    #      SPRING_DATASOURCE_URL: jdbc:postgresql://db:5433/tour
+    #      SPRING_DATASOURCE_USERNAME: root
+    #      SPRING_DATASOURCE_PASSWORD: root
+    #      DB_HOST: db
+    depends_on:
+      #        - db
+      - localRabbitMQ
+
+volumes:
+  redis_vol:

@@ -1,0 +1,22 @@
+    Tur agentliklər və hər agentliyin 1 istifadəçisi olmalıdır:
+        Agent və İstifadəçi siniflərini istifadə edərək bu tələbi artıq yerinə yetirirsiniz. Hər bir agentin bir istifadəçisi olması təmin edilmişdir.
+
+    Autentifikasiya poçt ilə həyata keçirilir:
+        İstifadəçilərin qeydiyyatdan keçməsi və giriş etməsi üçün bir sessiya idarəetmə sistemi yaradın.
+        İstifadəçilərin e-poçt ünvanı və şifrələri ilə giriş etmələrinə imkan verən bir giriş ekranı təmin edin.
+
+    Poçtun düzgünlüyünün yoxlanılması (aktivasiya poçtu ilə):
+        İstifadəçilərin qeydiyyat zamanı daxil etdikləri e-poçt ünvanının düzgün bir e-poçt ünvanı olduğunu doğrulayın.
+        Qeydiyyatdan keçən istifadəçilərə hesablarını aktivləşdirmək üçün aktivasiya bağlantısı olan bir doğrulama poçtu göndərin. Bu bağlantı, istifadəçilərin hesablarını aktivləşdirmələrini təmin edir.
+
+    İstifadəçilər özü qeydiyyatdan keçir (VOEN, agent adı, şirkət adı). Poçt yoxlanılışından sonra aktiv olurlar:
+        İstifadəçilərin öz-özlərini qeydiyyatdan keçməsinə imkan verən bir qeydiyyat formu təmin edin. Bu formda, VOEN, agent adı, şirkət adı kimi lazımi məlumatları toplayın.
+        İstifadəçilər qeydiyyatdan keçdikdən sonra, hesaplarını aktivləşdirmələri üçün bir doğrulama poçtu göndərin. E-poçt doğrulandıqdan sonra istifadəçilərin hesablarını aktivləşdirin.
+
+    Şifrəni dəyişmək (köhnə şifrəni daxil etməklə):
+        İstifadəçilərin özlərinin profil səhifəsində şifrələrini dəyişə biləcəkləri bir profili təmin edin.
+        İstifadəçilərdən mövcud şifrələrini və yeni şifrələrini daxil etmələrini istəyən bir şifrə dəyişikliyi formu təmin edin.
+
+    Şifrəni unutmaq (poçta link göndərməklə):
+        İstifadəçilərin şifrələrini sıfırlaya bilmələri üçün bir şifrə sıfırlama prosedürü əlavə edin.
+        İstifadəçilərin unudulan şifrələri üçün e-poçt ünvanlarını daxil edə biləcəkləri bir şifrə sıfırlama formu təmin edin. Daxil edilən e-poçt ünvanına şifrə sıfırlama bağlantısı olan bir e-poçt göndərin. Bu bağlantı, istifadəçilərin şifrələrini sıfırlamağa imkan verir.
